@@ -103,20 +103,17 @@ function App() {
     formData.append("file", selectedImage, selectedImage.name);
 
     try {
-      // const config = { responseType: "blob" };
-      // const config = {
-      // headers: {
-      //   "Access-Control-Allow-Origin": "*",
-      //   "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-      // },
-      // };
+      const config = {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+      },
+      };
       setLoading(true);
       const res = await axios.post(
         "http://127.0.0.1:8000/upload",
-        // "https://81lpku.deta.dev/upload",
-        formData
-        // config
-        // config
+        formData,
+        config
       );
       console.log(res);
       // check if image contain face
