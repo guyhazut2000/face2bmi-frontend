@@ -1,0 +1,91 @@
+.image-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  color: white;
+  gap:5px;
+}
+
+.image-title{
+    display: flex;
+    justify-content: center;
+}
+
+.image-data{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 10px;
+    gap:10px;
+}
+
+.image-upload{
+    display: flex;
+    margin: auto;
+}
+
+p{
+    font-size: 1rem;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+
+
+
+.image-input{
+    display: none;
+}
+
+.image-label{
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 10px;
+    gap:10px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    gap:10px;
+}
+
+.remove:hover{
+    color: white;
+    background-color: red;
+}
+
+
+.submit:hover{
+    color: white;
+    background-color: green;
+}

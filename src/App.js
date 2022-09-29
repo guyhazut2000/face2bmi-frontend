@@ -104,10 +104,10 @@ function App() {
 
     try {
       const config = {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-      },
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+        },
       };
       setLoading(true);
       const res = await axios.post(
@@ -183,16 +183,16 @@ function App() {
             )}
             <br />
             <br />
-            {/* <HeightInput
-            type="number"
-            placeholder="Enter Your Height"
-            min="0"
-            max="250"
-          />
-          <HeightSelect>
-            <option value="0">CM</option>
-            <option value="1">Feet</option>
-          </HeightSelect> */}
+            <HeightInput
+              type="number"
+              placeholder="Enter Your Height"
+              min="0"
+              max="250"
+            />
+            <HeightSelect>
+              <option value="0">CM</option>
+              <option value="1">Feet</option>
+            </HeightSelect>
           </InputWrapper>
         )}
         {result.containFace && (
@@ -211,7 +211,7 @@ function App() {
         {loading && <Loading>Processing request...</Loading>}
         {!result.containFace && (
           <BMIButton onClick={(e) => handleClick(e)}>Calculate BMI</BMIButton>
-        )}{" "}
+        )}
       </Container>
     </>
   );
