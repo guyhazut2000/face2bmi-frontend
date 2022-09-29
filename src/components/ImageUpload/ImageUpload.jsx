@@ -30,7 +30,7 @@ export default function ImageUpload() {
     try {
       setLoading(true);
       dispatch(getResultStart());
-      const res = await axios.post("https://localhost/upload", formData);
+      const res = await axios.post("http://localhost/upload", formData);
       console.log(res);
       // check if image contain face
       if (res.data.containFace === true) {
