@@ -89,3 +89,15 @@ button{
     color: white;
     background-color: green;
 }
+
+.error{
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.processing{
+    color: rgb(10, 64, 241);
+    font-weight: bold;
+    font-size: 1rem;
+}

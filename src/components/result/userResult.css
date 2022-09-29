@@ -1,0 +1,38 @@
+.result-container{
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    font-size: 3rem;
+    gap: 10px;
+}
+
+.result-title{
+    font-size: 4rem;
+    margin: auto;
+}
+
+.result{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.go-back-btn{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 10px 30px;
+    gap:10px;
+    cursor: pointer;
+}
+
+
+.go-back-btn:hover{
+    color: white;
+    background-color: blue;
+}
